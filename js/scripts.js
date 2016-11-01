@@ -15,6 +15,22 @@ Contact.prototype.fullName = function() {
 
 // user interface logic
 $(document).ready(function() {
+  $("#add-address").click(function() {
+    $("#new-addresses").append("<div class=\"new-address\">" +
+                                "<div class=\"form-group\">" +
+                                  "<label for=\"new-street\">Street</label>" +
+                                  "<input type=\"text\" class=\"form-control new-street\">" +
+                                "</div>" +
+                                "<div class=\"form-group\">" +
+                                  "<label for=\"new-street\">Street</label>" +
+                                  "<input type=\"text\" class=\"form-control new-street\">" +
+                                "</div>" +
+                                "<div class=\"form-group\">" +
+                                  "<label for=\"new-street\">Street</label>" +
+                                  "<input type=\"text\" class=\"form-control new-street\">" +
+                                "</div>" +
+                              "</div>");
+  });
 
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
