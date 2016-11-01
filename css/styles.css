@@ -10,3 +10,10 @@
 .contact:hover {
   text-decoration: underline;
 }
+.new-address p {
+  font-weight: bold;
+}
+
+.new-address select {
+  margin-bottom: 10px;
+}
